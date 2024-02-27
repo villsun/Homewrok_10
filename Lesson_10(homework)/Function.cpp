@@ -26,3 +26,43 @@ void Fill(T* p_arr, int size, T(*p_function)())
 		p_arr[i] = p_function();
 	}
 }
+
+template <typename T>
+void Show(const T* p_arr, int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << p_arr[i] << ' ';
+	}
+	cout << endl;
+}
+
+template <typename T>
+T Find_Min_Element(const T* p_arr, int size)
+{
+	T min_element = p_arr[0];
+	for (int i = 1; i < size; i++)
+	{
+		if (min_element> p_arr[i])
+		{
+			min_element = p_arr[i];
+		}
+	}
+
+	return min_element;
+}
+
+template <typename T>
+T Find_Max_Element(const T* p_arr, int size)
+{
+	T max_element = p_arr[0];
+	for (int i = 1; i < size; i++)
+	{
+		if (max_element < p_arr[i])
+		{
+			max_element = p_arr[i];
+		}
+	}
+
+	return max_element;
+}
