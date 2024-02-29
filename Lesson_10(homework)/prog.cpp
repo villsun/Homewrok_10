@@ -2,7 +2,7 @@
 
 int main()
 {
-	int arr[5];
-	Fill(arr, 5, Get_Value_Int);
-	Show(arr, 5);
+	char arr[5];
+	Fill_Char(arr, 5);
+	Show_Char(arr, 5);
 }

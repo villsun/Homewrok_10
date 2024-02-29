@@ -3,10 +3,10 @@
 #include <iostream>
 using namespace std;
 
-int Get_Value_Int();
-double Get_Value_Double();
-char Get_Value_Char();
-template <typename T>
-void Fill(T* p_arr, int size, T(*p_function)());
-template <typename T>
-void Show(const T* p_arr, int size);
+void Fill_Int(int* p_arr, int size);
+void Fill_Double(double* p_arr, int size);
+void Fill_Char(char* p_arr, int size);
+
+void Show_Int(const int* p_arr, int size);
+void Show_Double(const double* p_arr, int size);
+void Show_Char(const char* p_arr, int size);
