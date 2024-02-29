@@ -140,3 +140,51 @@ char Find_Max_Element_Char(const char* p_arr, int size)
 
 	return max_element;
 }
+
+void Sort_Int(int* p, int size)
+{
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = i + 1; j < size; j++)
+		{
+			if (p[i] > p[j])
+			{
+				int temp = p[i];
+				p[i] = p[j];
+				p[j] = temp;
+			}
+		}
+	}
+}
+
+void Sort_Double(double* p, int size)
+{
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = i + 1; j < size; j++)
+		{
+			if (p[i] > p[j])
+			{
+				double temp = p[i];
+				p[i] = p[j];
+				p[j] = temp;
+			}
+		}
+	}
+}
+
+void Sort_Char(char* p, int size)
+{
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = i + 1; j < size; j++)
+		{
+			if (p[i] > p[j])
+			{
+				char temp = p[i];
+				p[i] = p[j];
+				p[j] = temp;
+			}
+		}
+	}
+}

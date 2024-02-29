@@ -17,3 +17,7 @@ double Find_Min_Element_Double(const double* p_arr, int size);
 double Find_Max_Element_Double(const double* p_arr, int size);
 char Find_Min_Element_Char(const char* p_arr, int size);
 char Find_Max_Element_Char(const char* p_arr, int size);
+
+void Sort_Int(int* p, int size);
+void Sort_Double(double* p, int size);
+void Sort_Char(char* p, int size);
