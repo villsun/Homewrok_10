@@ -1,6 +1,22 @@
 #pragma once
 #include <ctime>
 #include <iostream>
+
+#define INTEGER 10
+
+
+#ifdef INTEGER
+void Show()
+{
+	cout << "Yesssssssssss!" << endl;
+}
+#else
+void Show()
+{
+	cout << "Noooooooooo!" << endl;
+}
+#endif // INTEGER
+
 using namespace std;
 
 void Fill_Int(int* p_arr, int size);
